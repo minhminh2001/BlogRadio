@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tab_text_normal">#696969</color>
+    <color name="tab_text_selected">#9953ab</color>
+    <color name="background">#e9e8e8</color>
+    <color name="bg_tabtrip">#8f57a3</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="rectangle_menu">#aeeae0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_blue_tranparent">#4D2bb199</color>
+    <color name="bg_black_tranparent">#99000000</color>
+    <color name="bg_white_tranparent">#99FFFFFF</color>
+    <color name="divided">#effbf9</color>
+    <color name="bg_dialog_tranparent">#CC7f7f7f</color>
+    <color name="bg_default">#f0f0f0</color>
+    <color name="gray2">#cccccc</color>
+    <color name="red">#FF0000</color>
+    <color name="authorClolor">#8a9aac</color>
+    <color name="tittle_text">#4e5259</color>
+    <color name="avatar_tranparent">#6562ac</color>
+    <integer-array name="androidcolor">
+        <item>@color/bg_tabtrip</item>
+        <item>@color/black</item>
+    </integer-array>
+
+
+
+</resources>

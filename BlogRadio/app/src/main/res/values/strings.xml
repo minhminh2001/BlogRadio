@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Blog Radio</string>
+    <string name="pause">pause</string>
+    <string name="play">play</string>
+    <string name="register_radio">Bạn đã sử dụng hết 60s miễn phí của dịch vụ. Vui lòng đăng ký gói cước Radio để tiếp tục thưởng thức nội dung này.  Miễn phí hoàn toàn cước 3G tải nội dung khi đăng ký gói.</string>
+    <string name="register_vlog">Bạn đã sử dụng hết 60s miễn phí của dịch vụ. Vui lòng đăng ký gói cước Vlog để tiếp tục thưởng thức nội dung này. Miễn phí hoàn toàn cước 3G tải nội dung khi đăng ký gói.</string>
+    <string name="app_id">1062336473897056</string>
+    <string name="sendcmt">Bạn phải nhập ít nhất 10 ký tự </string>
+    <string name="register">Bạn đã đăng ký gói cước , </string>
+    <string name="dangky">Bạn cần đăng ký để thực hiện chức năng này</string>
+    <string name="dangkyradio">Bạn đã đăng ký gói cước RADIO </string>
+    <string name="dangkyvlog">Bạn đã đăng ký gói cước VLOG</string>
+    <string name="download">Bạn cần đăng ký gói cước RADIO </string>
+    <string name="downloadvlog">Bạn cần đăng ký gói cước VLOG</string>
+    <string name="errorvlog">Không thể xem vlog này</string>
+    <string name="fragmentregister">Bạn phải dùng thuê bao Mobifone để đăng ký dịch vụ</string>
+
+    <string-array name="spinner">
+        <item>Nam</item>
+        <item>Nữ</item>
+        <item>Không xác định</item>
+    </string-array>
+</resources>

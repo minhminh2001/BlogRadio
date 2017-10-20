@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.plus.blogradio">
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.vnnplus.blogradio.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icblogradio"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Mytheme">
+        <activity
+            android:name="com.vnnplus.blogradio.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="blogradio" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vnnplus.blogradio.DetailVlogActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.vnnplus.blogradio.DetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.vnnplus.blogradio.SearchActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.vnnplus.blogradio.audioplayer.RadioService"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver android:name="com.vnnplus.blogradio.audioplayer.NotificationBroadcast">
+            <intent-filter>
+                <action android:name="com.audioplayer.delete" />
+                <action android:name="com.audioplayer.pause" />
+                <action android:name="com.audioplayer.play" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <receiver android:name="com.vnnplus.blogradio.audioplayer.MyReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

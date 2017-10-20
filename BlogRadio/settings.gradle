@@ -1,0 +1,2 @@
+include ':app', ':PagerSlidingTabStrip-master'
+include ':pagerIndicatormasterlibrary'

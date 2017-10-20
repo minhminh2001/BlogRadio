@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vnnplus.blogradio.widget.RoundedCornerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rlt_home"
+            android:layout_height="wrap_content">
+            <com.vnnplus.blogradio.widget.ImageViewRatio
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ratioWidth="1.55"
+                app:ratioHeight="1"
+                android:scaleType="centerCrop"
+                android:id="@+id/imv_home" />
+            <ImageView
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:id="@+id/vlog"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:src="@drawable/vlog"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rlt_bottom"
+            android:background="#ffffff"
+            android:layout_below="@+id/rlt_home"
+            android:padding="@dimen/dp_10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hành trình của hạnh phúc"
+                android:textColor="@color/tittle_text"
+                android:lines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:id="@+id/Tv_tittle"
+                android:textSize="@dimen/dp_15"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_below="@+id/Tv_tittle">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:id="@+id/view"
+                        android:src="@drawable/bt_giongdoc"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/view"
+                        android:textSize="@dimen/dp_13"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textColor="@color/authorClolor"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tv_Singler"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:text="Hằng Nga , Tuấn Anh"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:id="@+id/imv_time"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/bt_time" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imv_time"
+                        android:textSize="@dimen/dp_13"
+                        android:selectAllOnFocus="true"
+                        android:singleLine="true"
+                        android:textColor="@color/authorClolor"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_left"
+                        android:id="@+id/tv_time"
+                        android:text="28-01-2017"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_weight="1"
+                        android:id="@+id/img_favorite"
+                        android:tag="0"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:src="@drawable/ic_heart"/>
+                    <ImageView
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_25"
+                        android:layout_weight="1"
+                        android:id="@+id/img_download"
+                        android:tag="0"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:src="@drawable/ic_delete_blue_grey_900_24dp"/>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rltboltom"
+            android:paddingTop="@dimen/dp_10"
+            android:layout_above="@+id/rlt_bottom"
+            android:paddingBottom="@dimen/dp_10"
+            android:background="@drawable/bgr_bottom"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tittle"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/dp_15" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.vnnplus.blogradio.widget.RoundedCornerLayout>

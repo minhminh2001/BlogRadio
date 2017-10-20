@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.joooonho.SelectableRoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:scaleType="centerCrop"
+        app:sriv_left_top_corner_radius="@dimen/dp_8"
+        app:sriv_right_top_corner_radius="@dimen/dp_8"
+        app:sriv_left_bottom_corner_radius="0dp"
+        app:sriv_right_bottom_corner_radius="0dp"
+        android:id="@+id/imv_home"
+        android:src="@drawable/ava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlt_bottom"
+        android:layout_below="@+id/imv_home"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/radius_view">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hành trình của hạnh phúc"
+            android:textColor="@android:color/black"
+            android:lines="1"
+            android:id="@+id/Tv_tittle"
+            android:textSize="@dimen/dp_15"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@+id/Tv_tittle">
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:id="@+id/view"
+                android:src="@drawable/bt_giongdoc"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view"
+                android:textSize="@dimen/dp_13"
+                android:textColor="@color/authorClolor"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_Singler"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:text="Hằng Nga , Tuấn Anh"/>
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:id="@+id/imv_time"
+                android:src="@drawable/bt_time"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imv_time"
+                android:textSize="@dimen/dp_13"
+                android:textColor="@color/authorClolor"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:id="@+id/tv_time"
+                android:text="28-01-2017"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rltboltom"
+        android:paddingTop="@dimen/dp_10"
+        android:layout_above="@+id/rlt_bottom"
+        android:paddingBottom="@dimen/dp_10"
+        android:background="@drawable/bgr_bottom"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tittle"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/text_big" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

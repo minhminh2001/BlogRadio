@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ratioWidth" format="float" />
+    <attr name="ratioHeight" format="float" />
+    <attr name="datum" format="enum">
+        <enum name="width" value="0" />
+        <enum name="height" value="1" />
+    </attr>
+
+    <declare-styleable name="ImageViewRatio">
+        <attr name="ratioWidth"/>
+        <attr name="ratioHeight"/>
+        <attr name="datum" />
+    </declare-styleable>
+
+    <declare-styleable name="FrameLayoutRatio">
+        <attr name="ratioWidth"/>
+        <attr name="ratioHeight"/>
+        <attr name="datum" />
+    </declare-styleable>
+
+    <declare-styleable name="RelativeLayoutRatio">
+        <attr name="ratioWidth"/>
+        <attr name="ratioHeight"/>
+        <attr name="datum" />
+    </declare-styleable>
+</resources>
